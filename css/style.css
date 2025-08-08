@@ -1,0 +1,41 @@
+body{
+    background-image: url("../img/banner.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px) grayscale(0.5) brightness(1.5) contrast(0.5);
+    height: 100vh;
+}
+
+
+img{
+    /* Flexible entre 0px y 500px */
+    width: 100%;
+    max-width: 500px;
+}
+.circulo{
+    width: 150px;
+    height: 150px;
+    /* degradado de blanco a opacidad 0 al final y en el centro 100 */  
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%), rgba(255, 255, 255, 0);
+    border-radius: 50%;
+
+    /* Posicionamiento interno texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Tipografía */
+    color: #538180;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+    /* Posicionamiento por capas */
+    position: relative;
+    top:-75px;
+    left: calc(50% - 75px);
+}
+
+
